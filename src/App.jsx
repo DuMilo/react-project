@@ -1,5 +1,9 @@
 import { Header } from './components/Header';
 import { Sidebar } from './components/Sidebar';
+
+import { BrowserRouter } from 'react-router-dom';
+import { Router } from './Router';
+
 import './global.css';
 import styles from './App.module.css';
 
@@ -11,11 +15,9 @@ export function App() {
 
         <div className={styles.wrapper}>
           <Sidebar />
-
-          <main>
-            aqui é o main
-          </main>
-          
+          <BrowserRouter>
+            <Router />
+          </BrowserRouter>
         </div>
     </div>
   )

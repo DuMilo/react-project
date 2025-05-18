@@ -2,15 +2,29 @@
     width: 220px;
     min-height: 100vh;
     background: var(--white);
+    overflow: hidden;
 }
 
-.sidebar div {
-    margin: 26px 27px 0 30px;
+.profile div {
+    margin: 16px 0 0 20px;
     display: flex;         
     align-items: center;
     gap: 12px;
+
+    font-size: 16px;
+    background: transparent;
+    color: var(--black);
+    border-radius: 10px 0 0 10px;
+    padding: 0.75rem; /* top right down left */
+
+    transition: background-color 0.25s;
 }
 
-.sidebar div p {
-    font-size: 16px;
+.profile div a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.profile div:hover {
+    background: var(--gray-100);
 }
