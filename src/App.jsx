@@ -10,15 +10,17 @@ import styles from './App.module.css';
 export function App() {
   
   return (
-    <div>
-      <Header />
+      <div style={{width: '100%', height: '100vh', overflow: 'auto'}}>
+        <Header />
 
         <div className={styles.wrapper}>
           <Sidebar />
+
           <BrowserRouter>
             <Router />
           </BrowserRouter>
+          
         </div>
-    </div>
+      </div>
   )
 }
